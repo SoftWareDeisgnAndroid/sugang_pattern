@@ -1,0 +1,153 @@
+교양/교직 - 첨성인 기초 - 독서와 토론
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_subj_area_cde=1A01&search_open_yr_trm=20192
+
+교양/교직 - 첨성인 기초 - 사고교육
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_subj_area_cde=1A02&search_open_yr_trm=20192
+ 
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_subj_area_cde=1B0203&search_open_yr_trm=20192
+
+
+대학-인문대학-고고인류학과
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_open_crse_cde=1108&sub=11&search_open_yr_trm=20192
+
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_open_crse_cde=1101&sub=11&search_open_yr_trm=20192
+
+대학원 - 보건대학원 - 보건 관리 학과
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? search_open_crse_cde=22505&sub=225&search_open_yr_trm=20192
+
+대충 구조
+https://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? <search_sub> = <option value> &search_open_yr_trm_20192
+
+
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action?search_subj_area_cde=  1A01  &search_open_yr_trm=20192
+										  sub01
+
+
+==============================================================================================================
+
+mainDiv값이 1일때는 sub01만 보여준다
+	만약 jSubValue가 07이면 search_sub = 'search_subj_div_cde'
+	만약 jSubValue가 '300H' 이면 search_sub = 'search_open_crse_cde'
+	나머지 경우 search_sub = 'search_subj_area_cde'
+
+
+mainDiv가 2~ 4일때는 sub02까지 보여준다
+
+params = search_sub + '=' + jSubValue + '&sub=' J('select.sub:visible').val();
+
+
+=========================================================================================
+params += "&search_open_yr_trm="+ search_open_yr_trm ;
+
+아마 search_open_yr_trm은 현재 학기를 나타 내는 것일테니 이번학기는 20192 로 고정일듯함
+=========================================================================================
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action? 에다가 params를 더하는 형식으로 주소를 만듦
+
+
+=========================================================================================
+id = mainDiv
+"01">교양/교직/군사학/창업
+"02">대학
+"03">대학원
+"04">전문대학원
+"05">온라인수업
+"06">원어강의
+"08">플립드러닝강좌
+"07">계절학기
+===============================
+id = sub01   // class = sub
+<option value="1A01">첨성인기초 - 독서와토론</option>
+<option value="1A02">첨성인기초 - 사고교육</option>
+<option value="1A03">첨성인기초 - 글쓰기</option>
+<option value="1A04">첨성인기초 - 실용영어</option>
+<option value="1A05">첨성인기초 - 소프트웨어</option>
+<option value="1B0101">첨성인핵심 - 인문.사회 - 언어와문학</option>
+<option value="1B0102">첨성인핵심 - 인문.사회 - 사상과가치</option>
+<option value="1B0103">첨성인핵심 - 인문.사회 - 역사와문화</option>
+<option value="1B0104">첨성인핵심 - 인문.사회 - 사회와제도</option>
+<option value="1B0105">첨성인핵심 - 인문.사회 - 외국어</option>
+<option value="1B0201">첨성인핵심 - 자연과학 - 수리</option>
+<option value="1B0202">첨성인핵심 - 자연과학 - 기초과학</option>
+<option value="1B0203">첨성인핵심 - 자연과학 - 자연과환경</option>
+<option value="1C">첨성인일반</option>
+<option value="07">교직과목</option>
+<option value="46">군사학</option>
+<option value="300H">연구산학처</option>
+=================================
+id = sub02   // class = sub
+<option value="11">인문대학</option>
+<option value="12">사회과학대학</option>
+<option value="13">자연과학대학</option>
+<option value="14">경상대학</option>
+<option value="15">법과대학</option>
+<option value="16">공과대학</option>
+<option value="17">농업생명과학대학</option>
+<option value="19">사범대학</option>
+<option value="18">예술대학</option>
+<option value="1F">의과대학</option>
+<option value="1G">치과대학</option>
+<option value="1A">수의과대학</option>
+<option value="1B">생활과학대학</option>
+<option value="1E">자율전공부</option>
+<option value="1D">전자전기컴퓨터학부</option>
+<option value="1C">간호대학</option>
+<option value="1O">IT대학</option>
+<option value="1P">글로벌인재학부</option>
+<option value="1Q">약학대학</option>
+<option value="1R">에너지공학부</option>
+<option value="1S">행정학부</option>
+<option value="">==상주캠퍼스==</option>
+<option value="1L">생태환경대학</option>
+<option value="1N">이공대학</option>
+<option value="1U">과학기술대학</option>
+<option value="1M">보건복지학부</option>
+<option value="1V">축산대학</option>
+<option value="1W">과학기술생명자원자율학부</option>
+============================================
+id = sub03  // class = sub
+<option value="211">대학원</option>
+<option value="222">교육대학원</option>
+<option value="223">행정대학원</option>
+<option value="224">경영대학원</option>
+<option value="225">보건대학원</option>
+<option value="226">산업대학원</option>
+<option value="228">국제대학원</option>
+<option value="22G">농업생명융합대학원</option>
+<option value="229">정책정보대학원</option>
+<option value="22A">수사과학대학원</option>
+<option value="">==상주캠퍼스==</option>
+<option value="22F">과학기술대학원</option>
+==========================================
+id = sub04	//class = sub
+<option value="23B">치의학전문대학원</option>
+<option value="23C">의학전문대학원</option>
+<option value="23D">법학전문대학원</option>
+===========================================
+
+
+if(mainDiv == '01')
+	if(sub01 == '07')
+		search_sub = 'search_subj_div_cde'
+	else if(sub01 == '300H')
+		search_sub = 'search_open_crse_cde'
+	else
+		search_sub = 'search_subj_area_cde'
+params = search_sub+'='+jSubValue
+
+
+
+if(mainDiv != '07')
+	params += "&search_open_yr_trm" + search_open_yr_trm
+
+
+
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action?  +    params  //끝
+
+
+<예시 - 교양/교직>교직과목 >
+http://my.knu.ac.kr/stpo/stpo/cour/listLectPln/list.action?
+search_subj_div_cde=
+07
+&search_open_yr_trm=20192
+띄어쓰기없이 위에부터 하나씩 더해가면 됨
+

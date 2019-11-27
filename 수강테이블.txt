@@ -1,0 +1,17 @@
+<td class = "th1"> 학년</td>    <!--학년구분이 없을 떄는 * -->
+<td class = "th2"> 교과구분</td>
+<td class = "th3"> 인문대학, 의과대학,,, </td>
+<td class = "th4"> 교과목번호</td> 
+<td class = "th5"> 강의명</td>
+<td class = "th6"> 학점 </td>
+<td class = "th7"> 모름
+<td class = "th8"> 모름
+<td class = "th9"> 담당교수 이름</td> <!-- 여러명일 수도 있다-->
+<td class = "th10"> 강의시간</td> <!-- 화1A,1B,2A" 이런식으로 -->
+<td class = "th17"> 강의시간</td> <!-- 화09:00 ~ 10:30 이런식 -->
+<td class = "th11"> 수업장소</td>
+<td class = "th12"> 수강정원</td>
+<td class = "th13"> 모름
+<td class = "th14"> 모름
+<td class = "th15"> Y/N
+<td class = "th16"> 모름
